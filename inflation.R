@@ -12,7 +12,7 @@ getSymbols('GDPC96', src='FRED')
 
 bands <- USREC*max(GDPC96+1000)
 
-plot(as.zoo(infl.xts),lwd=3,col='darkblue',xlab='Year',ylab='Percent',main='Annual Inflation in the United States, 1960-2015')
+plot(as.zoo(infl.xts),lwd=3,col='darkblue',xlab='Year',ylab='Percent',main='Annual Inflation in the United States, 1960-present')
 lines(as.zoo(pcepi.xts), lwd=3, col='lightblue')
 lines(as.zoo(bands), col='darkgrey')
 abline(h=0,lty=2,lwd=1)
